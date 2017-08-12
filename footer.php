@@ -19,11 +19,13 @@ wp_footer();
 					<aside id="text-1" class="widget-footer-container widget_text">
 
 						<?php 
-							if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
-								return;
+						
+							if ( is_active_sidebar( 'footer-sidebar-1' ) ) {
+								
+								dynamic_sidebar( 'footer-sidebar-1' ); 
+								
 							}
 
-							dynamic_sidebar( 'footer-sidebar-1' ); 
 
 						?>
 
@@ -37,11 +39,11 @@ wp_footer();
 					<aside id="text-2" class="widget-footer-container widget_text">
 
 						<?php 
-							if ( ! is_active_sidebar( 'footer-sidebar-2' ) ) {
-								return;
+							if ( is_active_sidebar( 'footer-sidebar-2' ) ) {
+								
+								dynamic_sidebar( 'footer-sidebar-2' ); 
 							}
 
-							dynamic_sidebar( 'footer-sidebar-2' ); 
 
 						?>
 
@@ -55,11 +57,11 @@ wp_footer();
 					<aside id="text-3" class="widget-footer-container widget_text">
 
 						<?php 
-							if ( ! is_active_sidebar( 'page-bottom' ) ) {
-								return;
+							if ( is_active_sidebar( 'page-bottom' ) ) {
+								
+								dynamic_sidebar( 'page-bottom' ); 
 							}
 
-							dynamic_sidebar( 'page-bottom' ); 
 
 						?>
 

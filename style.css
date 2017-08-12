@@ -5939,7 +5939,7 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem; }
   body a {
-    text-decoration: none; }
+    text-decoration: none !important; }
 
 img {
   max-width: 100%;
